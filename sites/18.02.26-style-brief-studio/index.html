@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style Brief Studio</title>
+  <style>
+    :root{
+      --bg:#fffdf7;--paper:#ffffff;--ink:#21303a;--muted:#6e7f8b;--line:#e5ecef;
+      --accent:#4ba3c7;--accent2:#f2c36b;--ok:#4caf74;
+    }
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.5}
+    .wrap{max-width:1050px;margin:0 auto;padding:28px 18px 70px}
+    .hero{background:linear-gradient(180deg,#fff,#f9fcfd);border:1px solid var(--line);border-radius:20px;padding:28px}
+    .tag{display:inline-block;background:#eef7fb;color:#2c6d89;padding:6px 12px;border-radius:999px;font-weight:600;font-size:.9rem}
+    h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.07;margin:12px 0 6px}
+    .lead{max-width:760px;color:var(--muted);font-size:1.05rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:20px 0}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px}
+    h2{font-size:1.35rem;margin:8px 0}
+    section{margin-top:24px}
+    .swatches{display:flex;flex-wrap:wrap;gap:10px}
+    .sw{padding:10px 12px;border-radius:999px;border:1px solid var(--line);font-size:.92rem}
+    form{display:grid;gap:12px}
+    label{font-weight:600;font-size:.95rem}
+    input,select,textarea{width:100%;padding:11px 12px;border-radius:10px;border:1px solid #d9e3e8;background:#fff;font:inherit;color:inherit}
+    textarea{min-height:130px;resize:vertical}
+    .btns{display:flex;flex-wrap:wrap;gap:10px}
+    button{border:0;border-radius:10px;padding:11px 14px;font-weight:700;cursor:pointer}
+    .primary{background:var(--accent);color:white}
+    .ghost{background:#edf4f7;color:#24536a}
+    .outline{background:white;border:1px solid #cfdde3;color:#2e4a57}
+    .note{color:var(--muted);font-size:.92rem}
+    .out{white-space:pre-wrap;background:#f9fbfc;border:1px dashed #ccdbe2;border-radius:12px;padding:12px}
+    footer{margin-top:30px;color:#7b8f9b;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="tag">Bright Design · No Futuristic Aesthetic</span>
+      <h1>Style Brief Studio</h1>
+      <p class="lead">Use this page to define exactly what kind of website style you want. Fill out the brief, click generate, and paste it to me in chat. I’ll build from that spec.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card"><h2>1) Visual Direction</h2><p class="note">Choose an overall vibe like minimal, playful, editorial, premium, cozy, or corporate clean.</p></article>
+      <article class="card"><h2>2) Color Mood</h2><p class="note">Bright, warm, and natural tones are default. Pick accents you like most.</p></article>
+      <article class="card"><h2>3) Content Structure</h2><p class="note">Define sections: hero, services, testimonials, pricing, FAQ, contact, etc.</p></article>
+    </section>
+
+    <section class="card">
+      <h2>Color & Style Samples</h2>
+      <div class="swatches">
+        <span class="sw" style="background:#fef8ec">Warm Cream</span>
+        <span class="sw" style="background:#eef8ff">Soft Sky</span>
+        <span class="sw" style="background:#f5ffe9">Light Sage</span>
+        <span class="sw" style="background:#fff0f4">Blush</span>
+        <span class="sw" style="background:#fff">Clean White</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Website Style Brief Form</h2>
+      <form id="briefForm">
+        <div>
+          <label>Project Name</label>
+          <input id="project" placeholder="e.g., personal brand landing" />
+        </div>
+        <div>
+          <label>Style You Want</label>
+          <select id="style">
+            <option>Bright minimal</option>
+            <option>Bright premium</option>
+            <option>Warm editorial</option>
+            <option>Playful modern</option>
+            <option>Clean corporate</option>
+          </select>
+        </div>
+        <div>
+          <label>Sections Needed</label>
+          <input id="sections" placeholder="hero, benefits, process, testimonials, faq, contact" />
+        </div>
+        <div>
+          <label>Examples You Like (optional)</label>
+          <input id="examples" placeholder="paste links or describe look" />
+        </div>
+        <div>
+          <label>Notes / Must-Haves</label>
+          <textarea id="notes" placeholder="fonts, mood, spacing, CTA style, imagery preference..."></textarea>
+        </div>
+        <div class="btns">
+          <button type="button" class="primary" onclick="generateBrief()">Generate Brief</button>
+          <button type="button" class="ghost" onclick="copyBrief()">Copy Brief</button>
+          <button type="reset" class="outline">Reset</button>
+        </div>
+      </form>
+      <p class="note">Tip: Keep it simple. The clearer your style brief, the better the final website.</p>
+      <div class="out" id="output">Your generated style brief appears here.</div>
+    </section>
+
+    <section class="card">
+      <h2>How it works</h2>
+      <ol>
+        <li>Fill the brief in under 2 minutes.</li>
+        <li>Copy it and send it to me in Telegram.</li>
+        <li>I build your website using your selected style.</li>
+      </ol>
+    </section>
+
+    <footer>Built for Peer · Bright-first web direction.</footer>
+  </main>
+
+  <script>
+    function generateBrief(){
+      const project=document.getElementById('project').value.trim()||'website project';
+      const style=document.getElementById('style').value;
+      const sections=document.getElementById('sections').value.trim()||'hero, about, services, contact';
+      const examples=document.getElementById('examples').value.trim()||'none';
+      const notes=document.getElementById('notes').value.trim()||'none';
+
+      const brief =
+`Build me a website with this style brief:
+- Project: ${project}
+- Aesthetic: ${style} (bright, clean, non-futuristic)
+- Sections: ${sections}
+- Example references: ${examples}
+- Must-haves: ${notes}
+- Output: one polished multi-section landing page.`;
+
+      document.getElementById('output').textContent = brief;
+    }
+
+    async function copyBrief(){
+      const text=document.getElementById('output').textContent;
+      if(!text || text.includes('appears here')) return;
+      await navigator.clipboard.writeText(text);
+      const out=document.getElementById('output');
+      const old=out.textContent;
+      out.textContent='✅ Brief copied. Paste it into chat.';
+      setTimeout(()=>out.textContent=old,1200);
+    }
+  </script>
+</body>
+</html>
