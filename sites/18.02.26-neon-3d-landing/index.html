@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon 3D Landing</title>
+  <style>
+    html,body{margin:0;height:100%;background:#05070f;overflow:hidden;font-family:Inter,system-ui,Arial}
+    #overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+    .card{pointer-events:auto;background:rgba(5,10,25,.55);backdrop-filter:blur(10px);border:1px solid rgba(120,160,255,.25);padding:22px 28px;border-radius:16px;color:#e9eeff;text-align:center;max-width:640px;box-shadow:0 10px 40px rgba(0,0,0,.45)}
+    h1{margin:0 0 8px;font-size:clamp(28px,5vw,52px)}
+    p{margin:0 0 14px;opacity:.86}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;color:#fff;background:linear-gradient(90deg,#6f7cff,#41d1ff)}
+  </style>
+</head>
+<body>
+  <div id="overlay"><div class="card"><h1>3D Web Presence</h1><p>Modern animated Three.js starter deployed automatically.</p><a class="btn" href="#">Launch Project</a></div></div>
+  <script type="module">
+    import * as THREE from 'https://unpkg.com/three@0.164.1/build/three.module.js';
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(70, innerWidth/innerHeight, 0.1, 100);
+    camera.position.z = 4;
+    const renderer = new THREE.WebGLRenderer({antialias:true});
+    renderer.setSize(innerWidth, innerHeight);
+    renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+    document.body.appendChild(renderer.domElement);
+
+    const geo = new THREE.TorusKnotGeometry(1,0.32,220,32);
+    const mat = new THREE.MeshPhysicalMaterial({
+      color:0x7f8cff, metalness:0.55, roughness:0.2, transmission:0.2, thickness:1.4, clearcoat:1
+    });
+    const mesh = new THREE.Mesh(geo, mat);
+    scene.add(mesh);
+
+    const lightA = new THREE.PointLight(0x41d1ff, 40, 40); lightA.position.set(4,2,4); scene.add(lightA);
+    const lightB = new THREE.PointLight(0xff57d8, 35, 40); lightB.position.set(-4,-2,3); scene.add(lightB);
+    scene.add(new THREE.AmbientLight(0x7a86ff, 0.5));
+
+    const clock = new THREE.Clock();
+    function tick(){
+      const t = clock.getElapsedTime();
+      mesh.rotation.x = t*0.35;
+      mesh.rotation.y = t*0.5;
+      mesh.position.y = Math.sin(t*0.9)*0.15;
+      renderer.render(scene,camera);
+      requestAnimationFrame(tick);
+    }
+    tick();
+
+    addEventListener('resize', ()=>{
+      camera.aspect = innerWidth/innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+    });
+  </script>
+</body>
+</html>
