@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FINN // COD Stream</title>
+  <meta name="description" content="Clean tactical-style launch page for Finn's COD streaming career." />
+  <style>
+    :root{
+      --bg:#0d1014; --panel:#151a20; --panel2:#1c232b; --line:#2a323d;
+      --text:#edf1f5; --muted:#a9b4bf; --accent:#c8a56b; --ok:#5fa77c;
+      --max:1160px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px 18px 70px}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0 18px;border-bottom:1px solid var(--line)}
+    .logo{font-weight:900;letter-spacing:.11em}
+    .pill{font-size:.78rem;color:#d8c39e;border:1px solid #5b4c35;padding:6px 10px;border-radius:999px;background:#221d16}
+
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;margin-top:18px}
+    .hero-copy,.hero-media{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    .hero-copy{padding:24px}
+    .eyebrow{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:#c9d2dc}
+    h1{font-size:clamp(2rem,5vw,3.8rem);line-height:1.04;margin:.35em 0 .25em}
+    .lead{color:var(--muted);font-size:1.03rem;max-width:60ch}
+    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .btn{padding:11px 14px;border-radius:10px;text-decoration:none;font-weight:800}
+    .btn-main{background:var(--accent);color:#16120a}
+    .btn-ghost{background:#1f2630;color:#dfe7ef;border:1px solid #33404f}
+
+    .hero-media img{width:100%;height:100%;min-height:360px;object-fit:cover;display:block;filter:saturate(.9) contrast(1.06)}
+
+    .section{margin-top:18px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px}
+    .k{font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:#94a1ae}
+    .v{margin-top:7px;font-size:1.1rem;font-weight:750}
+
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+    .panel h3{margin:0 0 8px}
+    .panel p,.panel li{color:var(--muted)}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .gallery img{width:100%;height:190px;object-fit:cover;border-radius:10px;border:1px solid #2e3946}
+
+    .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+    .links a{display:block;text-decoration:none;padding:12px;border-radius:10px;background:#1a2129;border:1px solid #334252;color:#e6edf4;font-weight:700}
+
+    footer{margin-top:20px;color:#8f9baa;font-size:.88rem}
+    @media (max-width:920px){.hero,.split{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}}
+    @media (max-width:620px){.gallery{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="nav">
+      <div class="logo">FINN // COD</div>
+      <div class="pill">Clean Tactical Style</div>
+    </nav>
+
+    <section class="hero">
+      <article class="hero-copy">
+        <div class="eyebrow">Streamer Launch</div>
+        <h1>Finn is entering the lobby.</h1>
+        <p class="lead">High-pressure gameplay, smart rotations, and consistent streams. Built as a clean, serious Call‑of‑Duty style page without the noisy “AI look.”</p>
+        <div class="btns">
+          <a class="btn btn-main" href="#watch">Watch Live</a>
+          <a class="btn btn-ghost" href="#schedule">Schedule</a>
+          <a class="btn btn-ghost" href="#clips">Top Clips</a>
+        </div>
+      </article>
+      <aside class="hero-media">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1400&q=80" alt="Gaming setup" />
+      </aside>
+    </section>
+
+    <section class="section cards">
+      <div class="card"><div class="k">Game</div><div class="v">Call of Duty</div></div>
+      <div class="card"><div class="k">Focus</div><div class="v">Ranked + Warzone</div></div>
+      <div class="card"><div class="k">Tone</div><div class="v">Competitive, clean, no hype spam</div></div>
+      <div class="card"><div class="k">Goal</div><div class="v">Build core community fast</div></div>
+    </section>
+
+    <section class="section split" id="schedule">
+      <div class="panel">
+        <h3>Weekly Stream Schedule</h3>
+        <ul>
+          <li>Mon / Wed / Fri — 19:30–23:00</li>
+          <li>Sat — 16:00–21:00 community games</li>
+          <li>Sun — highlights + strategy review</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Channel Positioning</h3>
+        <p>Finn focuses on smart gunfights, clean movement, and tactical decision-making. Content mix: live ranked, Warzone sessions, and short educational clips.</p>
+      </div>
+    </section>
+
+    <section class="section" id="clips">
+      <div class="panel">
+        <h3>Visual Moodboard (real images)</h3>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80" alt="Game controller" />
+          <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=1200&q=80" alt="Monitor and setup" />
+          <img src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?auto=format&fit=crop&w=1200&q=80" alt="Keyboard lights" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="watch">
+      <div class="panel">
+        <h3>Where to watch Finn</h3>
+        <div class="links">
+          <a href="#">Twitch (add URL)</a>
+          <a href="#">YouTube Live (add URL)</a>
+          <a href="#">TikTok Clips (add URL)</a>
+          <a href="#">Discord (add URL)</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>Concept fan page for Finn's streaming launch. “Call of Duty” belongs to its respective trademark owner.</footer>
+  </main>
+</body>
+</html>
