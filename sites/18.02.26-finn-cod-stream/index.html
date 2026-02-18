@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finn // COD Stream Launch</title>
+  <meta name="description" content="Official launch page for Finn's Call of Duty streaming career." />
+  <style>
+    :root{
+      --bg:#07090f;
+      --bg2:#0f1320;
+      --card:#111827cc;
+      --line:#26324f;
+      --text:#f2f5ff;
+      --muted:#9aa6c7;
+      --a:#53d8fb;
+      --b:#7a6bff;
+      --c:#9bf9b8;
+      --danger:#ff5b7a;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(1200px 800px at 80% -20%,#27366f66,transparent 60%),radial-gradient(1000px 500px at -20% 120%,#183f5e66,transparent 60%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:1150px;margin:0 auto;padding:28px 20px 72px}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    .logo{font-weight:900;letter-spacing:.12em}
+    .logo span{color:var(--a)}
+    .tag{font-size:.8rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:#0c1120}
+
+    .hero{position:relative;border:1px solid var(--line);border-radius:24px;padding:40px 26px;background:linear-gradient(160deg,#0b1120,#0a0f1b);overflow:hidden;transform-style:preserve-3d;perspective:1200px}
+    .hero:before{content:"";position:absolute;inset:-20%;background:conic-gradient(from 100deg at 30% 30%,#53d8fb33,#7a6bff22,#9bf9b822,#53d8fb33);filter:blur(38px);animation:spin 14s linear infinite;z-index:0}
+    .hero-inner{position:relative;z-index:2}
+    h1{font-size:clamp(2.1rem,6vw,4.6rem);line-height:1.03;margin:6px 0 10px;letter-spacing:-1.3px}
+    .grad{background:linear-gradient(90deg,var(--a),#8fb5ff,var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:760px;color:var(--muted);font-size:clamp(1rem,2.1vw,1.2rem)}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .btn{border:0;border-radius:12px;padding:11px 15px;font-weight:800;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+    .btn-main{background:linear-gradient(90deg,var(--a),var(--b));color:#071019}
+    .btn-ghost{background:#141b2d;color:#dce7ff;border:1px solid #2d3a61}
+
+    .floating{position:absolute;right:24px;top:24px;width:min(33vw,320px);aspect-ratio:1/1;transform:rotateY(-16deg) rotateX(12deg);border-radius:20px;border:1px solid #2d3a61;background:linear-gradient(145deg,#1a2442,#121b33);box-shadow:0 20px 60px #0008, inset 0 1px 0 #ffffff1f}
+    .floating:before{content:"LIVE";position:absolute;left:12px;top:12px;font-size:.75rem;font-weight:900;color:#fff;background:var(--danger);padding:4px 9px;border-radius:999px}
+    .floating:after{content:"FINN // WARZONE";position:absolute;left:12px;bottom:12px;font-weight:800;color:#d8e2ff;letter-spacing:.04em}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;backdrop-filter:blur(8px);transform:translateZ(0);transition:.25s transform,.25s border-color}
+    .card:hover{transform:translateY(-4px) rotateX(2deg);border-color:#4e679a}
+    .k{font-size:.76rem;color:#8da0c9;text-transform:uppercase;letter-spacing:.09em}
+    .v{font-size:1.25rem;font-weight:800;margin-top:7px}
+
+    section{margin-top:22px}
+    .section-title{font-size:1.4rem;margin:0 0 10px}
+    .timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+    .step{background:#0e1528;border:1px solid #273457;border-radius:14px;padding:14px}
+    .step b{color:#eaf0ff}
+    .step p{margin:.4rem 0 0;color:var(--muted)}
+
+    .social{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+    .social a{background:#0f182d;border:1px solid #2d4068;border-radius:12px;padding:12px 14px;color:#dbe7ff;text-decoration:none;font-weight:700;display:block}
+    .social a:hover{border-color:#6a89d4}
+
+    .foot{margin-top:24px;color:#8fa1c6;font-size:.88rem}
+
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @media (max-width:900px){.floating{display:none}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="nav">
+      <div class="logo">FINN<span>.LIVE</span></div>
+      <div class="tag">Call of Duty Stream Launch</div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <h1><span class="grad">Finn is dropping in.</span><br/>New COD stream era starts now.</h1>
+        <p class="lead">High-kill gameplay, clutch moments, and consistent grind. This is the official launch page for Finn’s streaming career—built for attention, retention, and growth.</p>
+        <div class="cta">
+          <a class="btn btn-main" href="#watch">▶ Watch Live</a>
+          <a class="btn btn-ghost" href="#schedule">🗓️ Stream Schedule</a>
+          <a class="btn btn-ghost" href="#about">🎯 About Finn</a>
+        </div>
+      </div>
+      <div class="floating" aria-hidden="true"></div>
+    </section>
+
+    <section class="grid" id="about">
+      <article class="card"><div class="k">Role</div><div class="v">FPS Entertainer</div></article>
+      <article class="card"><div class="k">Game</div><div class="v">Call of Duty</div></article>
+      <article class="card"><div class="k">Style</div><div class="v">Aggro + Smart Plays</div></article>
+      <article class="card"><div class="k">Mission</div><div class="v">Build a top-tier community</div></article>
+    </section>
+
+    <section id="schedule">
+      <h2 class="section-title">Launch roadmap</h2>
+      <div class="timeline">
+        <div class="step"><b>Phase 1 — Visibility</b><p>Post clips daily, run consistent stream windows, sharpen thumbnails/titles.</p></div>
+        <div class="step"><b>Phase 2 — Community</b><p>Engage chat, run custom lobbies, introduce weekly challenges.</p></div>
+        <div class="step"><b>Phase 3 — Growth</b><p>Collabs, creator tournaments, and sponsor-ready media kit.</p></div>
+      </div>
+    </section>
+
+    <section id="watch">
+      <h2 class="section-title">Where to watch</h2>
+      <div class="social">
+        <a href="#">🟣 Twitch (add link)</a>
+        <a href="#">🔴 YouTube Live (add link)</a>
+        <a href="#">🎬 TikTok Clips (add link)</a>
+        <a href="#">💬 Discord Community (add link)</a>
+      </div>
+    </section>
+
+    <p class="foot">Fan-made streamer launch page concept for Finn. “Call of Duty” is a trademark of its respective owner.</p>
+  </main>
+</body>
+</html>
