@@ -1,0 +1,512 @@
+<!doctype html>
+<html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Lead Dashboard</title>
+<style>
+body{font-family:Inter,Arial,sans-serif;background:#0e1320;color:#e9eefc;margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding:20px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 18px}
+input,select{background:#121a2b;color:#fff;border:1px solid #2a3552;border-radius:10px;padding:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.card{background:#131d33;border:1px solid #2a3552;border-radius:12px;padding:12px}
+.top{display:flex;justify-content:space-between;gap:8px;align-items:center}
+h1{margin:4px 0} h3{margin:0;font-size:18px}
+.badge{background:#1f7a46;color:#d8ffe9;padding:4px 8px;border-radius:999px;font-size:12px}
+.small{opacity:.75;font-size:12px} .links a{color:#8eb6ff} .muted{opacity:.8}
+</style></head>
+<body><div class='wrap'>
+<h1>Leads Dashboard</h1>
+<p class='muted'>Total leads: <strong id='count'>51</strong></p>
+<div class='toolbar'>
+  <input id='q' placeholder='Search name/address/niche...' />
+  <select id='status'><option value=''>All statuses</option><option>review_pending</option><option>approved</option><option>declined</option></select>
+  <select id='location'><option value=''>All locations</option><option>United States</option><option>United Kingdom</option><option>Dubai</option></select>
+</div>
+<div id='grid' class='grid'>
+
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>Roxana Aesthetics Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 51 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> 825 Al Wasl Rd - Al Safa 2 - Al Safa - Dubai - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://roxanaaesthetics.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>EDEN Aesthetics Clinic | Botox | Filler | Laser | BBL</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 50 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> Bay View Tower - 20th Floor - Business Bay - Dubai - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.edenderma.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>SKINIII Medical &amp; Aesthetics Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 49 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> Dubai DIFC, Unit G02, Building #5, The Gate Village 5, DIFC, Road 312 - زعبيل الثانية - DIFC - دبي - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://skin111.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>Perfect Doctors Clinic Dubai Rhinoplasty BBL Liposuction Gynecomastia tummy tuck facelift Breast body lift butt fillers botox</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 48 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> Villa 888 Al Wasl Rd - Jumeirah - Umm Suqeim 1 - Dubai - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.perfectdrs.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>Glow Aesthetics Dermatology Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 47 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> 45 - Al Attar Business Centre - Al Barsha First - Al Barsha - Dubai - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://glowdubai.ae/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>SKIN111 Medical &amp; Aesthetic Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 46 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> LG floor (Shop, Palm Jumeirah Mall - NKM-B-1014 - opposite to Life Pharmacy Palm - The Palm Jumeirah - Jumeirah Mall - Dubai - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://skin111.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>Hortman Clinics</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 45 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> 32 Floor - 1 Sheikh Zayed Rd - Trade Center First - Dubai - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://hortmanclinics.com/?utm_source=gmb' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>AV Miracle Aesthetic Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 44 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> Ibn Sina Building 27 Block C - Office 207 2nd Floor - أم هرير الثانية - Dubai Healthcare City - دبي - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://av.clinic/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>Los Angeles Aesthetic Medical Center</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 43 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> 63 Al Thanya St - Villa D - Dubai - 63 شارع الثنيه - أم سقيم الثانية - ام سقيم ٢ - دبي - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://losangelesclinic.ae/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='Dubai' data-niche='aesthetic clinics'>
+      <div class='top'><h3>Biolite Clinic Dubai</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 42 · <strong>Niche:</strong> aesthetic clinics</p>
+      <p><strong>Location:</strong> 57 Al Thanya St - Umm Suqeim Second - Umm Suqeim 2 - Dubai - United Arab Emirates</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.biolitedubai.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:17</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Your Smile Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 41 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 75 Dale St, Manchester M1 2HG, UK</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='http://yoursmileclinic.co.uk/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The Cosmetic Dental Gallery Battersea</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 40 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 20 Patcham Terrace, Nine Elms, London SW8 4EY, UK</p>
+      <p><strong>Why website:</strong> Likely needs performance/UX/conversion optimization for better lead generation.</p>
+      <p class='links'><a href='https://thecosmeticdentalgallery.co.uk/our-practices/battersea/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The Dental &amp; Cosmetic Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 39 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 14 Saffron Rd, South Wigston, Wigston LE18 4TD, UK</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.dentalandcosmeticclinic.co.uk/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The Cosmetic Dental Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 38 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 2, Old, Eldon Square, Newcastle upon Tyne NE1 7JG, UK</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='http://www.thecosmeticdentalclinic.com/?utm_source=googlemaps&amp;utm_medium=organic&amp;utm_campaign=primary' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Marylebone Smile Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 37 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 66 Harley St, London W1G 7HD, UK</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://marylebonesmileclinic.co.uk/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The Cosmetic Dental Gallery</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 36 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 260 Creek Rd, London SE10 9SW, UK</p>
+      <p><strong>Why website:</strong> Likely needs performance/UX/conversion optimization for better lead generation.</p>
+      <p class='links'><a href='https://thecosmeticdentalgallery.co.uk/our-practices/greenwich/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The Harley Street Smile Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 35 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 128 Harley St, London W1G 7JT, UK</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://harleystreetsmileclinic.co.uk/?utm_source=gmb&amp;utm_medium=organic' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Cheadle Hulme Dental and Cosmetics</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 34 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 20A Station Rd, Cheadle Hulme, Cheadle SK8 7AB, UK</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.cheadlehulmedental.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The London Smile Clinic</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 33 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 40-44 Clipstone St, London W1W 5DW, UK</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='http://www.londonsmile.co.uk/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United Kingdom' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The London Centre for Cosmetic Dentistry</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 32 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 93 Haverstock Hill, Belsize Park, London NW3 4RL, UK</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.londoncosmeticdentistry.co.uk/?utm_source=gmb&amp;utm_medium=organic' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:16</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='law firms'>
+      <div class='top'><h3>Abraham, Watkins, Nichols, Agosto, Aziz &amp; Stogner Houston</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 31 · <strong>Niche:</strong> law firms</p>
+      <p><strong>Location:</strong> 800 Commerce St, Houston, TX 77002, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.abrahamwatkins.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb_local_growthlab' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:15</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>Memorial Plastic Surgery</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 30 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 8731 Katy Fwy Suite 500, Houston, TX 77024, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.memorialplasticsurgery.com/?utm_source=gbp&amp;utm_medium=organic&amp;utm_campaign=mps' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>Dr. Franklin D Richards</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 29 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 6430 Rockledge Dr #100, Bethesda, MD 20817, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://cosmeticplastics.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>Cosmetic Surgery Associates</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 28 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 6430 Rockledge Dr #100, Bethesda, MD 20817, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://cosmeticplastics.com/?utm_campaign=gmb' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>Charlotte Plastic Surgery</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 27 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 2215 Randolph Rd, Charlotte, NC 28207, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.charlotteplasticsurgery.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp&amp;utm_content=uptown' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>CaloAesthetics® Plastic Surgery Center</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 26 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 2341 Lime Kiln Ln, Louisville, KY 40222, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.caloaesthetics.com/?utm_source=google&amp;utm_medium=local&amp;utm_campaign=louisville-practice-website' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>Erick Sanchez, MD Plastic Surgery</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 25 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 5045 Bluebonnet Blvd, Baton Rouge, LA 70809, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.sanchezplasticsurgery.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>Dr. Keshav Magge MD, FACS</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 24 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 6430 Rockledge Dr #100, Bethesda, MD 20817, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://cosmeticplastics.com/?utm_campaign=gmb' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>Robbins Plastic Surgery</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 23 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 503 Spruce St, Nashville, TN 37203, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.robbinsplasticsurgery.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>West End Plastic Surgery</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 22 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 2440 M St NW #200, Washington, DC 20037, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.westendplasticsurgery.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='plastic surgeons'>
+      <div class='top'><h3>USA Plastic Surgery</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 21 · <strong>Niche:</strong> plastic surgeons</p>
+      <p><strong>Location:</strong> 8230 Walnut Hill Ln Suite 814 Building 3, Dallas, TX 75231, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://usaplasticsurgery.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:14</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>New Image Works</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 20 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 3633 W Lake Ave #303, Glenview, IL 60026, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='http://newimageworks.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:12</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>American Med Spa Association</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 19 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 224 N Desplaines St Ste 300, Chicago, IL 60661, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.americanmedspa.org/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:12</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>New Image Works</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 18 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 1348 N Wells St, Chicago, IL 60610, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://newimageworks.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:12</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>Luxury Medical Spa</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 17 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 17122 Beach Blvd UNIT 100, Huntington Beach, CA 92647, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='http://www.luxurymedicalspa.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:12</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>It&#x27;s A Secret Med Spa</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 16 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 2935 Blackburn St Suite 100, Dallas, TX 75204, USA</p>
+      <p><strong>Why website:</strong> Likely needs performance/UX/conversion optimization for better lead generation.</p>
+      <p class='links'><a href='https://secretmedspa.com/dallas-tx/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:12</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>Perfect Med Spa</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 15 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 109 E 36th St Ground floor, New York, NY 10016, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.perfectmedspa.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp&amp;utm_term=Perfect-Med-Spa&amp;utm_content=website' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:12</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>Evolve Med Spa</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 14 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 91 Worth St, New York, NY 10013, USA</p>
+      <p><strong>Why website:</strong> Likely needs performance/UX/conversion optimization for better lead generation.</p>
+      <p class='links'><a href='https://evolvemedspa.com/in/new-york/tribeca-ny/?utm_source=gmb&amp;utm_medium=organic&amp;utm_campaign=tribeca' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:12</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>SkinFX Medical Spa</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 13 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 709 E Walnut St Suite 109, Pasadena, CA 91101, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='http://www.skinfxmedicalspa.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:12</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>La Bella Vita Medi Spa</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 12 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 6801 Five Star Blvd suite c, Rocklin, CA 95677, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.labellavitamedispa.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:12</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Advanced Cosmetic &amp; Implant Dentistry</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 11 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 30 S Michigan Ave #300, Chicago, IL 60603, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.cosmeticdentistchicago.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Beverly Hills Dentistry</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 10 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 8920 Wilshire Blvd #701, Beverly Hills, CA 90211, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://beverlyhillsdentistry.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Making You Smile Cosmetic Dentist Studio NYC: Dr. Ziad Jalbout DDS</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 9 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 36 E 36th St #1D, New York, NY 10016, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://makingyousmile.nyc/?utm_source=GMB&amp;utm_medium=WebsiteURL' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Bill Dorfman, DDS</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 8 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 2080 Century Pk E #1601, Los Angeles, CA 90067, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://billdorfmandds.com/?utm_source=GoogleBusinessProfile&amp;utm_medium=Organic&amp;utm_campaign=Website' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The Smile Code</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 7 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 1143 5th Ave, New York, NY 10128, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.thesmilecode.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The Cosmetic Dentists of Austin</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 6 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 2700 Barton Creek Blvd Suite 130, Austin, TX 78735, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://thecosmeticdentistsofaustin.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Lux Smiles Cosmetic Dentistry and Prosthodontics</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 5 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> Second Floor, 2400 N Ashland Ave Suite 200, Chicago, IL 60614, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.luxsmiles.net/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Cosmetic Dentistry of San Antonio</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 4 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 16530 Huebner Rd #301, San Antonio, TX 78248, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.cosmeticdentistryofsa.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>Luxury &amp; Cosmetic Dentistry NYC</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 3 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 328 E 75th St, New York, NY 10021, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.luxurydentistrynyc.com/?utm_source=gbp&amp;utm_medium=organic&amp;utm_campaign=gbp-listing' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='cosmetic dentists'>
+      <div class='top'><h3>The New York Center for Cosmetic Dentistry</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 2 · <strong>Niche:</strong> cosmetic dentists</p>
+      <p><strong>Location:</strong> 128 E 71st St Suite #2, New York, NY 10021, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='https://www.nyccd.com/?utm_source=googlemybusiness&amp;utm_medium=organic&amp;utm_campaign=Google+My+Business' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 21:10:10</p>
+    </article>
+    
+    <article class='card' data-status='review_pending' data-location='United States' data-niche='med spas'>
+      <div class='top'><h3>The One Med Spa</h3><span class='badge'>review_pending</span></div>
+      <p><strong>ID:</strong> 1 · <strong>Niche:</strong> med spas</p>
+      <p><strong>Location:</strong> 2717 N 10th St, McAllen, TX 78501, USA</p>
+      <p><strong>Why website:</strong> Likely minimal/basic website footprint; strong opportunity for conversion-focused redesign.</p>
+      <p class='links'><a href='http://www.theonemedspa.com/' target='_blank'>Website</a> · No social</p>
+      <p class='small'>Created: 2026-02-19 19:04:29</p>
+    </article>
+    
+</div>
+</div>
+<script>
+const q = document.getElementById('q');
+const status = document.getElementById('status');
+const locationSel = document.getElementById('location');
+const grid = document.getElementById('grid');
+const cards = [...grid.querySelectorAll('.card')];
+const count = document.getElementById('count');
+function apply() {
+  const needle = q.value.trim().toLowerCase();
+  const s = status.value;
+  const l = locationSel.value;
+  let shown=0;
+  cards.forEach(c => {
+    const text = c.innerText.toLowerCase();
+    const okQ = !needle || text.includes(needle);
+    const okS = !s || c.dataset.status===s;
+    const okL = !l || c.dataset.location===l;
+    const ok = okQ && okS && okL;
+    c.style.display = ok ? '' : 'none';
+    if (ok) shown++;
+  });
+  count.textContent = shown;
+}
+[q,status,locationSel].forEach(el => el.addEventListener('input', apply));
+</script>
+</body></html>
